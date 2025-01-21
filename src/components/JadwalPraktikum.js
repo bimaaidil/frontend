@@ -27,12 +27,46 @@ const JadwalPraktikum = () => {
 };
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20, backgroundColor: "#007BFF" },
-  title: { fontSize: 26, color: "#fff", textAlign: "center", marginBottom: 20 },
-  item: { backgroundColor: "#fff", padding: 15, borderRadius: 8 },
-  mataKuliah: { fontSize: 18, fontWeight: "bold" },
-  waktu: { fontSize: 16, color: "#555" },
-  lab: { fontSize: 16, color: "#4CAF50" },
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: "#007BFF", // Warna latar belakang terang dan lembut
+  },
+  title: {
+    fontSize: 26,
+    fontWeight: "bold",
+    marginBottom: 20,
+    textAlign: "center",
+    color: "#333", // Warna teks judul yang lebih gelap
+  },
+  item: {
+    backgroundColor: "#ffffff", // Latar belakang putih untuk item jadwal
+    padding: 15,
+    marginBottom: 15,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#ddd", // Warna border yang lembut
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+    elevation: 5, // Bayangan untuk efek kedalaman
+  },
+  mataKuliah: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#007BFF", // Warna biru untuk mata kuliah (mirip tombol)
+  },
+  waktu: {
+    fontSize: 16,
+    color: "#7f8c8d", // Warna abu-abu untuk waktu
+    marginTop: 5,
+  },
+  lab: {
+    fontSize: 16,
+    color: "#4CAF50", // Warna hijau untuk lab
+    marginTop: 5,
+  },
 });
 
 export default JadwalPraktikum;

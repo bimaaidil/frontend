@@ -26,13 +26,6 @@ const MenuUtama = ({ navigation }) => {
         >
           <Text style={styles.menuText}>Informasi</Text>
         </TouchableOpacity>
-
-        <TouchableOpacity
-          style={styles.menuItem}
-          onPress={() => navigation.navigate("Pengaturan Akun")}
-        >
-          <Text style={styles.menuText}>Pengaturan Akun</Text>
-        </TouchableOpacity>
       </View>
     </View>
   );
@@ -41,7 +34,7 @@ const MenuUtama = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#007BFF", // Warna latar belakang biru, sama dengan halaman login
+    backgroundColor: "#007BFF", // Warna latar belakang yang lembut
     padding: 16,
     justifyContent: "center",
     alignItems: "center",
@@ -49,23 +42,21 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "#fff", // Teks putih agar kontras dengan latar belakang biru
+    color: "#fff",
     marginBottom: 32,
   },
   menuContainer: {
     width: "100%", // Menu akan memenuhi lebar layar
   },
   menuItem: {
-    backgroundColor: "#28a745", // Warna hijau untuk tombol
+    backgroundColor: "#28a745", // Mengubah warna latar belakang menjadi hijau
     padding: 16,
     marginVertical: 8, // Jarak vertikal antar tombol
     borderRadius: 8,
     alignItems: "center",
     justifyContent: "center",
-    shadowColor: "#000", // Efek bayangan untuk iOS
-    shadowOffset: { width: 0, height: 2 }, // Posisi bayangan
-    shadowOpacity: 0.8, // Opasitas bayangan
-    shadowRadius: 2, // Radius bayangan
+    // Gantilah shadow* dengan boxShadow
+    boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.25)", // Efek bayangan menggunakan boxShadow
     elevation: 5, // Untuk memberikan efek bayangan di Android
   },
   menuText: {
